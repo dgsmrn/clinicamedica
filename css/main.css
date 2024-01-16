@@ -1,0 +1,130 @@
+.main {
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.main__titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--cinza-bold);
+  padding: 8px 0;
+  width: 100%;
+}
+
+.main__card {
+  background-color: var(--branco);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.card__imagem {
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.card__textos {
+  margin-right: auto;
+}
+
+.card__nome {
+  font-weight: 700;
+  color: var(--cinza-bold);
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.card__tipo-consulta {
+  color: var(--cinza-regular);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__icone {
+  background-color: var(--cinza-claro);
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.card__linha {
+  border: 1px solid var(--cinza-bold);
+  opacity: 0.1;
+}
+
+.card__body {
+  padding: 16px;
+}
+
+.body__texto {
+  font-size: 12px;
+  color: var(--cinza-bold);
+  margin-bottom: 8px;
+}
+
+.card__botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__botao-laranja,
+.card__botao-branco,
+.card__botao-azul {
+  border-radius: 8px;
+  padding: 13px 16px;
+  font-family: var(--fonte-principal);
+}
+
+.card__botao-laranja {
+  background-color: var(--laranja);
+  border: 1px solid var(--laranja);
+  color: var(--branco);
+}
+
+.card__botao-branco {
+  background-color: var(--branco);
+  border: 1px solid var(--borda-cinza);
+  color: var(--cinza-bold);
+}
+
+.card__botao-azul {
+  background-color: var(--azul);
+  border: 1px solid var(--azul);
+  color: var(--branco);
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main__card {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main__card {
+    width: 32%;
+  }
+}

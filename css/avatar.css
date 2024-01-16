@@ -1,0 +1,28 @@
+.avatar {
+  padding: 65px 0 22px 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.avatar__imagem {
+  width: 57px;
+  border-radius: 50%;
+}
+
+.avatar__titulo {
+  color: var(--cinza-bold);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+}
+
+.avatar__texto {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .avatar {
+    padding: 20px;
+  }
+}

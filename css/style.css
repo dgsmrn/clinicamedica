@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("./avatar.css");
+@import url("./main.css");
+@import url("./footer.css");
+@import url("./maisopcoes.css");
+
+:root {
+  --fundo-gradiente: linear-gradient(135deg, #f8f4ff, #eff0f4);
+  --preto: #000000;
+  --branco: #ffffff;
+  --cinza-bold: #464646;
+  --cinza-regular: #a3a3a3;
+  --cinza-claro: #f6f6f6;
+  --laranja: #ffb050;
+  --azul: #4894ff;
+  --borda-cinza: #ececec;
+  --cinza-svg: #c8c8c8;
+  --fonte-principal: "Montserrat", sans-serif;
+  --cinza-form: #898989;
+}
+
+/* 400 regular - 500 medium - 700 bold */
+body {
+  background: var(--fundo-gradiente);
+  font-family: var(--fonte-principal);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cinza-regular);
+  position: relative;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
